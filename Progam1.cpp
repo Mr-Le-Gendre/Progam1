@@ -21,11 +21,11 @@ int main() {
     double finalPrice = sellingPrice + salesTax;
 
     cout << "\n--- Receipt ---\n";
-    cout << "Original Price: $" << originalPrice << endl;
-    cout << "Markup Percentage: " << markupPercentage << "%" << endl;
-    cout << "Selling Price: $" << sellingPrice << endl;
-    cout << "Sales Tax: $" << salesTax << endl;
-    cout << "Final Price (with tax): $" << finalPrice << endl;
+    cout << "original_Price: $" << originalPrice << endl;
+    cout << "markup_Percentage: " << markupPercentage << "%" << endl;
+    cout << "selling_Price: $" << sellingPrice << endl;
+    cout << "sales_Tax: $" << salesTax << endl;
+    cout << "final_Price (with tax): $" << finalPrice << endl;
 
     return 0;
 }
