@@ -4,21 +4,28 @@
 using namespace std;
 
 int main() {
-    double originalPrice, markupPercentage, salesTaxRate;
+    double originalPrice, markupPercentage, salesTaxRate;  // User inputs: originalPrice, markupPercentage, salesTaxRate
 
     cout << "Enter original price: $";
-    cin >> originalPrice;
+    cin >> originalPrice;  // User inputs: originalPrice
 
     cout << "Enter markup percentage: ";
-    cin >> markupPercentage;
+    cin >> markupPercentage;  // User inputs: markupPercentage
 
     cout << "Enter sales tax rate: ";
-    cin >> salesTaxRate;
+    cin >> salesTaxRate;  // User inputs: salesTaxRate
 
-    double markupAmount = (markupPercentage / 100) * originalPrice;
-    double sellingPrice = originalPrice + markupAmount;
-    double salesTax = (salesTaxRate / 100) * sellingPrice;
-    double finalPrice = sellingPrice + salesTax;
+    // Processing notes:
+    // 1. Read originalPrice, markupPercentage, and salesTaxRate from user input.
+    // 2. Calculate markup amount using the formula: markupAmount = (markupPercentage / 100) * originalPrice.
+    // 3. Calculate selling price by adding markup amount to original price.
+    // 4. Calculate sales tax using the formula: salesTax = (salesTaxRate / 100) * sellingPrice.
+    // 5. Calculate final price by adding selling price and sales tax.
+
+    double markupAmount = (markupPercentage / 100) * originalPrice;  // Supplied constant: markupAmount
+    double sellingPrice = originalPrice + markupAmount;  // Supplied constant: sellingPrice
+    double salesTax = (salesTaxRate / 100) * sellingPrice;  // Supplied constant: salesTax
+    double finalPrice = sellingPrice + salesTax;  // Supplied constant: finalPrice
 
     cout << "\n--- Receipt ---\n";
     cout << "original_Price: $" << originalPrice << endl;
@@ -29,14 +36,3 @@ int main() {
 
     return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
